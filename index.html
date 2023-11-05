@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foggo's Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script> 
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Nhập vào tên thành phố" spellcheck="false">
+            <button><img src="assets/images/search.png" alt="Search button"></button>
+        </div>
+        <div class="weather">
+            <img src="assets/images/clear.png" class="weather-icon" alt="">
+            <h1 class="temp">33°C</h1>
+            <h2 class="city">HaNoi</h2>
+        </div>
+        <div class="detail">
+            <div class="each-detail">
+                <div class="icon-and-value">
+                    <img src="assets/images/humidity.png" alt="humidinity-icon">
+                    <p class="humidity">79%</p>
+                </div>
+                <div class="detail-name">
+                    <p>Độ ẩm</p>
+                </div>
+            </div>
+            <div class="each-detail">
+                <div class="icon-and-value">
+                    <img src="assets/images/wind.png" alt="wind-speed-icon">
+                    <p class="wind-speed">26 km/h</p>
+                </div>
+                <div class="detail-name">
+                    <p>Tốc độ gió</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
