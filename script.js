@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         } else if (data.weather[0].main == "Snow") {
             weatherIcon.src = "assets/images/snow.png";
         }
+
+        document.querySelector(".below").style.display = "block";
     }
 
     searchButton.addEventListener("click", () => {
