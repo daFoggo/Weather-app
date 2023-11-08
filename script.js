@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const apiKey = "60af0469c67566cbc9ed6a747b72bd23";
-    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+    const apiKey = "60af0469c67566cbc9ed6a747b72bd23"; //saveAPIkey
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="; //saveAPILink
 
-    const searchBox = document.querySelector(".search input");
+    //select element
+    const searchBox = document.querySelector(".search input"); 
     const searchButton = document.querySelector(".search button");
     const weatherIcon = document.querySelector(".weather-icon");
     const backgroundColor = document.querySelector(".card");
     
+    //main function
     async function checkWeather(cityName) {
         const response = await fetch(apiUrl + cityName + `&appid=${apiKey}`);
         const data = await response.json();
-
-        console.log(data);
 
         document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
         document.querySelector(".city").innerHTML = data.name;
